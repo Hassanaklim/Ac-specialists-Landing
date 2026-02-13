@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; font-family:Arial, sans-serif; background:#002244; color:white; text-align:center; padding-top:80px;">
+<div style="background:white; color:#333; margin:auto; width:85%; max-width:450px; padding:40px; border-radius:30px; border-top:10px solid #ffcc00;">
+<h1 style="color:#004488; margin:0; font-size:28px;">AirCool Specialists</h1>
+<p style="font-size:18px; font-weight:bold; color:#666;">Parramatta, NSW</p>
+<div style="height:2px; background:#eee; margin:20px 0;"></div>
+<p style="font-size:16px;">Installation • Repairs • Maintenance</p>
+<a href="tel:+61290000000" style="display:inline-block; background:#ffcc00; color:#002244; padding:18px 35px; text-decoration:none; border-radius:15px; font-weight:bold; font-size:20px; margin-top:20px;">CALL: +61 2 9000 0000</a>
+<p style="margin-top:25px; font-size:13px; color:#999;">Available 24/7 for Emergencies</p>
+</div>
+<p style="margin-top:40px; font-size:11px; opacity:0.5;">© 2026 AirCool Specialists Australia</p>
+</body>
+</html>
