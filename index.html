@@ -1,0 +1,528 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Air Conditioning Supply, Installation, and Maintenance services. Ducted, Split, and VRV systems for residential and commercial properties.">
+    <meta name="keywords" content="AC installation, Air conditioning maintenance, Ducted AC, Split system, VRV system, Commercial AC">
+    <title>AirCool Specialists | Residential & Commercial AC Services</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0056b3',
+                            dark: '#003d80',
+                            light: '#eef4ff',
+                            accent: '#00a8e8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Read More Animation */
+        .read-more-content {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .read-more-content.expanded {
+            -webkit-line-clamp: unset;
+        }
+
+        /* Smooth Fade In */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-wind text-brand-accent text-3xl"></i>
+                    <span class="font-bold text-2xl text-brand-dark tracking-tight">AirCool<span class="text-brand-accent">Specialists</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-brand-blue font-medium transition">Services</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-brand-blue font-medium transition">Reviews</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-blue font-medium transition">Contact</a>
+                    <a href="tel:5551234567" class="bg-brand-accent hover:bg-brand-blue text-white px-5 py-2.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone mr-2"></i>Call Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#services" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-brand-light rounded-md">Services</a>
+                <a href="#reviews" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-brand-light rounded-md">Reviews</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-brand-light rounded-md">Contact</a>
+                <a href="tel:5551234567" class="block w-full text-center mt-4 bg-brand-accent text-white px-5 py-3 rounded-lg font-bold">Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2000&auto=format&fit=crop" alt="Modern Home Air Conditioning" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                    Your Air Conditioning <br><span class="text-brand-accent">Specialist</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light leading-relaxed">
+                    Supplying, Installing, and Maintaining Ducted, Split, Multiple, and VRV Air Conditioning Systems for Homes & Businesses.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-brand-accent hover:bg-brand-blue text-white text-lg px-8 py-4 rounded-lg font-bold text-center transition shadow-lg hover:shadow-brand-accent/50 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-contract"></i> Request a Quote
+                    </a>
+                    <a href="tel:5551234567" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-lg px-8 py-4 rounded-lg font-bold text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone-volume animate-pulse"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-blue font-bold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Comprehensive AC Solutions</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" alt="Ducted Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg shadow-lg">
+                            <i class="fa-solid fa-house-chimney text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Ducted Systems</h4>
+                        <div class="read-more-content text-gray-600 mb-4 flex-1">
+                            Centralized air conditioning solutions designed for whole-home or office climate control. Provides invisible cooling to every room via discreet vents.
+                        </div>
+                        <button class="read-more-btn text-brand-accent font-semibold hover:text-brand-blue transition mt-auto w-full text-left flex items-center gap-2" onclick="toggleReadMore(this)">
+                            Read More <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 font-semibold py-2 rounded transition">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=600&auto=format&fit=crop" alt="Split Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg shadow-lg">
+                            <i class="fa-solid fa-temperature-arrow-down text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Split Systems</h4>
+                        <div class="read-more-content text-gray-600 mb-4 flex-1">
+                            Efficient, easy-to-install cooling and heating units for single rooms or zones. Highly energy-efficient and quiet operation for bedrooms or living areas.
+                        </div>
+                        <button class="read-more-btn text-brand-accent font-semibold hover:text-brand-blue transition mt-auto w-full text-left flex items-center gap-2" onclick="toggleReadMore(this)">
+                            Read More <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 font-semibold py-2 rounded transition">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=600&auto=format&fit=crop" alt="Multiple Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg shadow-lg">
+                            <i class="fa-solid fa-layer-group text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Multiple Systems</h4>
+                        <div class="read-more-content text-gray-600 mb-4 flex-1">
+                            Perfect for properties with several rooms requiring independent climate control. Allows specific zones to be heated or cooled based on occupancy.
+                        </div>
+                        <button class="read-more-btn text-brand-accent font-semibold hover:text-brand-blue transition mt-auto w-full text-left flex items-center gap-2" onclick="toggleReadMore(this)">
+                            Read More <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 font-semibold py-2 rounded transition">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop" alt="VRV Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg shadow-lg">
+                            <i class="fa-solid fa-building text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">VRV / VRF Systems</h4>
+                        <div class="read-more-content text-gray-600 mb-4 flex-1">
+                            Advanced energy-efficient solutions for large residential and commercial buildings. Perfect for high-rise apartments, hotels, and office complexes.
+                        </div>
+                        <button class="read-more-btn text-brand-accent font-semibold hover:text-brand-blue transition mt-auto w-full text-left flex items-center gap-2" onclick="toggleReadMore(this)">
+                            Read More <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 font-semibold py-2 rounded transition">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Reviews -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Trusted by Locals</h2>
+                    <p class="text-gray-600">See what our customers are saying about our service.</p>
+                </div>
+                <div class="flex items-center gap-2 bg-yellow-50 px-4 py-2 rounded-full border border-yellow-100">
+                    <div class="flex text-yellow-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-brand-dark font-bold">5.0 Rating</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Absolutely fantastic service. They installed our ducted AC in record time and the price was very fair. The team was professional and clean."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">JD</div>
+                        <div>
+                            <p class="font-bold text-gray-900">John Doe</p>
+                            <p class="text-xs text-gray-500">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"We needed a VRV system for our new office. AirCool Specialists handled the entire installation seamlessly. Highly recommended for commercial work."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold">SM</div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Miller</p>
+                            <p class="text-xs text-gray-500">Office Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Prompt maintenance service. They caught a potential issue with our split units before it became a costly repair. Great communication throughout."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">MR</div>
+                        <div>
+                            <p class="font-bold text-gray-900">Mike Roberts</p>
+                            <p class="text-xs text-gray-500">Property Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="py-10 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm text-gray-400 font-semibold mb-8 uppercase tracking-wider">Authorized Partners</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Placeholder Logos using text/icons for simplicity -->
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-700"><i class="fa-solid fa-cloud"></i> Daikin</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-700"><i class="fa-solid fa-wind"></i> Mitsubishi</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-700"><i class="fa-solid fa-fan"></i> Fujitsu</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-700"><i class="fa-solid fa-temperature-arrow-up"></i> Carrier</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-700"><i class="fa-solid fa-snowflake"></i> Gree</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-accent opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-blue opacity-10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
+                    <p class="text-gray-300 mb-8 text-lg">Ready to upgrade your comfort? Call us for a free quote or fill out the form below. We respond to all inquiries within 24 hours.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0 text-brand-accent">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Call Us Direct</h4>
+                                <a href="tel:5551234567" class="text-2xl text-white hover:text-brand-accent transition font-semibold">555-123-4567</a>
+                                <p class="text-gray-400 text-sm">Mon-Fri 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0 text-brand-accent">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Email Us</h4>
+                                <a href="mailto:info@aircool.com" class="text-lg text-white hover:text-brand-accent transition">info@aircoolspecialists.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0 text-brand-accent">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Visit Our Office</h4>
+                                <p class="text-gray-300">123 Sunshine Coast Hwy<br>Air Conditioning, CA 90210</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-brand-accent rounded-full flex items-center justify-center transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-brand-accent rounded-full flex items-center justify-center transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-brand-accent rounded-full flex items-center justify-center transition text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 text-gray-800 shadow-2xl">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been sent.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition" placeholder="John Smith">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition" placeholder="555-000-0000">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Service Interest</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition">
+                                <option>Installation</option>
+                                <option>Maintenance</option>
+                                <option>Repair</option>
+                                <option>Consultation</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-blue hover:bg-brand-dark text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4 text-white">
+                        <i class="fa-solid fa-wind text-brand-accent text-2xl"></i>
+                        <span class="font-bold text-xl">AirCool Specialists</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-sm">
+                        Your trusted partner for all air conditioning needs. Dedicated to providing efficient, reliable, and professional climate control solutions for residential and commercial clients across the region.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#hero" class="hover:text-brand-accent transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-brand-accent transition">Services</a></li>
+                        <li><a href="#reviews" class="hover:text-brand-accent transition">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-brand-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Hours</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                        <li class="pt-2"><a href="tel:5551234567" class="text-brand-accent hover:text-white">Call Emergency</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2023 AirCool Specialists. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Read More / Read Less Toggle
+        function toggleReadMore(btn) {
+            const contentDiv = btn.parentElement.querySelector('.read-more-content');
+            const icon = btn.querySelector('i');
+            const textSpan = btn.querySelector('span');
+
+            if (contentDiv.classList.contains('expanded')) {
+                contentDiv.classList.remove('expanded');
+                textSpan.textContent = 'Read More';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                contentDiv.classList.add('expanded');
+                textSpan.textContent = 'Read Less';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md', 'bg-white/95');
+                navbar.classList.remove('shadow-sm', 'bg-white/90');
+            } else {
+                navbar.classList.remove('shadow-md', 'bg-white/95');
+                navbar.classList.add('shadow-sm', 'bg-white/90');
+            }
+        });
+    </script>
+</body>
+</html>
