@@ -1,204 +1,153 @@
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional Air Conditioning Supply, Installation, and Maintenance services in Parramatta. Ducted, Split, and VRV systems.">
-<meta name="keywords" content="AC installation Australia, Air conditioning Parramatta, Ducted AC, Split system, VRV system">
-<title>AirCool Specialists | Residential & Commercial AC Parramatta</title>
-
+<title>AirCool Specialists | Residential & Commercial AC Services</title>
 <script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<script>
-tailwind.config = {
-theme: {
-extend: {
-fontFamily: { sans: ['Inter', 'sans-serif'] },
-colors: {
-brand: { blue: '#0056b3', dark: '#003d80', light: '#eef4ff', accent: '#00a8e8' }
-}
-}
-}
-}
-</script>
-
 <style>
-.read-more-content { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; transition: all 0.3s ease; }
-.read-more-content.expanded { -webkit-line-clamp: unset; }
-.fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
-@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+.hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
 </style>
 </head>
-<body class="font-sans text-gray-700 bg-white antialiased">
+<body class="bg-slate-50 text-slate-900">
 
-<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-<i class="fa-solid fa-wind text-brand-accent text-3xl"></i>
-<span class="font-bold text-2xl text-brand-dark tracking-tight">AirCool<span class="text-brand-accent">Specialists</span></span>
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<i class="fas fa-wind text-blue-600 text-2xl"></i>
+<span class="text-xl font-bold tracking-tight">AirCool<span class="text-blue-600">Specialists</span></span>
 </div>
-
-<div class="hidden md:flex items-center space-x-8">
-<a href="#services" class="text-gray-600 hover:text-brand-blue font-medium transition">Services</a>
-<a href="#reviews" class="text-gray-600 hover:text-brand-blue font-medium transition">Reviews</a>
-<a href="#contact" class="text-gray-600 hover:text-brand-blue font-medium transition">Contact</a>
-<a href="tel:+61290000000" class="bg-brand-accent hover:bg-brand-blue text-white px-5 py-2.5 rounded-full font-semibold transition shadow-lg">
-<i class="fa-solid fa-phone mr-2"></i>Call Now
+<div class="hidden md:flex gap-8 font-medium">
+<a href="#services" class="hover:text-blue-600 transition">Services</a>
+<a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
+<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+</div>
+<a href="tel:+61290000000" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition flex items-center gap-2">
+<i class="fas fa-phone-alt"></i> Call Now
 </a>
-</div>
-</div>
 </div>
 </nav>
 
-<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2000&auto=format&fit=crop" alt="Modern Home AC" class="w-full h-full object-cover">
-<div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-transparent"></div>
-</div>
-
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="max-w-3xl fade-in-up">
-<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-Your Air Conditioning <br><span class="text-brand-accent">Specialist</span>
-</h1>
-<p class="text-xl md:text-2xl text-gray-200 mb-10 font-light leading-relaxed">
-Professional AC Installation & Maintenance for Homes & Businesses in Parramatta and Beyond.
-</p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a href="#contact" class="bg-brand-accent hover:bg-brand-blue text-white text-lg px-8 py-4 rounded-lg font-bold text-center transition shadow-lg">Request a Quote</a>
-<a href="tel:+61290000000" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-lg px-8 py-4 rounded-lg font-bold text-center transition">Call Now</a>
+<section class="hero-gradient h-[85vh] flex items-center text-white pt-16">
+<div class="max-w-7xl mx-auto px-4 w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Your Air Conditioning <span class="text-blue-400">Specialist</span></h1>
+<p class="text-lg mb-8 text-slate-200">Professional AC Installation & Maintenance for Homes & Businesses in Parramatta and Beyond.</p>
+<div class="flex gap-4">
+<a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold transition">Request a Quote</a>
+<a href="tel:+61290000000" class="bg-white/10 hover:bg-white/20 border border-white/30 px-8 py-4 rounded-lg font-bold transition">Call Now</a>
 </div>
 </div>
 </div>
 </section>
 
-<section id="services" class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="services" class="py-24 max-w-7xl mx-auto px-4">
 <div class="text-center mb-16">
-<h2 class="text-brand-blue font-bold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
-<h3 class="text-3xl md:text-4xl font-bold text-gray-900">Comprehensive AC Solutions</h3>
+<h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-3">Our Expertise</h2>
+<p class="text-4xl font-black text-slate-800">Comprehensive AC Solutions</p>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full group">
-<div class="h-48 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1581094288338-2314ddbd7c3c?q=80&w=600" alt="Ducted Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
-<div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg"><i class="fa-solid fa-house-chimney"></i></div>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="text-xl font-bold text-gray-900 mb-3">Ducted Systems</h4>
-<div class="read-more-content text-gray-600 mb-4">Whole-home climate control with discreet ceiling vents. Perfect for consistent cooling across all rooms.</div>
-<button class="read-more-btn text-brand-accent font-semibold" onclick="toggleReadMore(this)">Read More</button>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-300">
+<img src="https://images.unsplash.com/photo-1581094288338-2314dddb7dee?auto=format&fit=crop&w=800&q=80" alt="Ducted AC" class="w-full h-48 object-cover">
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3">Ducted Systems</h3>
+<p class="text-slate-600 mb-4">Whole-home climate control with discreet ceiling vents. Perfect for consistent cooling.</p>
+<a href="#contact" class="text-blue-600 font-bold flex items-center gap-2">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
 </div>
 </div>
 
-<div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full group">
-<div class="h-48 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1631525886981-22589927ec27?q=80&w=600" alt="Split Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
-<div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="text-xl font-bold text-gray-900 mb-3">Split Systems</h4>
-<div class="read-more-content text-gray-600 mb-4">Ideal for single rooms or specific zones. Energy-efficient, quiet, and quick to install.</div>
-<button class="read-more-btn text-brand-accent font-semibold" onclick="toggleReadMore(this)">Read More</button>
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-300 border-b-4 border-blue-600">
+<img src="https://images.unsplash.com/photo-1631545866282-2f363fffe12a?auto=format&fit=crop&w=800&q=80" alt="Split AC" class="w-full h-48 object-cover">
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3">Split Systems</h3>
+<p class="text-slate-600 mb-4">Ideal for single rooms or specific zones. Energy-efficient, quiet, and quick to install.</p>
+<a href="#contact" class="text-blue-600 font-bold flex items-center gap-2">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
 </div>
 </div>
 
-<div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full group">
-<div class="h-48 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1599933023673-c2484c67eb1c?q=80&w=600" alt="Multi Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
-<div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg"><i class="fa-solid fa-layer-group"></i></div>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="text-xl font-bold text-gray-900 mb-3">Multiple Systems</h4>
-<div class="read-more-content text-gray-600 mb-4">One outdoor unit connecting multiple indoor units. Saves space while providing individual room control.</div>
-<button class="read-more-btn text-brand-accent font-semibold" onclick="toggleReadMore(this)">Read More</button>
-</div>
-</div>
-
-<div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full group">
-<div class="h-48 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" alt="VRV Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
-<div class="absolute top-4 right-4 bg-brand-blue text-white p-3 rounded-lg"><i class="fa-solid fa-building"></i></div>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="text-xl font-bold text-gray-900 mb-3">VRV / VRF Systems</h4>
-<div class="read-more-content text-gray-600 mb-4">High-performance solutions for commercial buildings and large apartments with maximum efficiency.</div>
-<button class="read-more-btn text-brand-accent font-semibold" onclick="toggleReadMore(this)">Read More</button>
-</div>
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-300">
+<img src="https://images.unsplash.com/photo-1599933023573-044199c45014?auto=format&fit=crop&w=800&q=80" alt="Multi Systems" class="w-full h-48 object-cover">
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3">Multi-Split Systems</h3>
+<p class="text-slate-600 mb-4">One outdoor unit connecting multiple indoor units. Saves space while providing flexibility.</p>
+<a href="#contact" class="text-blue-600 font-bold flex items-center gap-2">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
 </div>
 </div>
 </div>
 </section>
 
-<section class="py-12 bg-white border-y border-gray-100">
+<section class="py-12 bg-white border-y border-slate-200">
 <div class="max-w-7xl mx-auto px-4 text-center">
-<p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">Authorized Partners</p>
-<div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Daikin_logo.svg/1200px-Daikin_logo.svg.png" class="h-8 object-contain" alt="Daikin">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mitsubishi_logo.svg/1200px-Mitsubishi_logo.svg.png" class="h-8 object-contain" alt="Mitsubishi">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Fujitsu_Logo.svg/1200px-Fujitsu_Logo.svg.png" class="h-8 object-contain" alt="Fujitsu">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Carrier_Logo.svg/1200px-Carrier_Logo.svg.png" class="h-8 object-contain" alt="Carrier">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gree_Electric_Logo.svg/1200px-Gree_Electric_Logo.svg.png" class="h-8 object-contain" alt="Gree">
+<p class="text-slate-400 font-semibold mb-8 uppercase tracking-widest text-xs">Authorized Partners</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+<span class="text-2xl font-black text-slate-800">DAIKIN</span>
+<span class="text-2xl font-black text-slate-800">MITSUBISHI</span>
+<span class="text-2xl font-black text-slate-800">FUJITSU</span>
+<span class="text-2xl font-black text-slate-800">CARRIER</span>
+<span class="text-2xl font-black text-slate-800">GREE</span>
 </div>
 </div>
 </section>
 
-<section id="contact" class="py-20 bg-brand-dark text-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
 <div>
-<h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
-<p class="text-gray-300 mb-10">Serving Parramatta and surrounding suburbs with quality AC solutions.</p>
+<h2 class="text-4xl font-black mb-6">Get in Touch</h2>
+<p class="text-slate-400 mb-10">Serving Parramatta and surrounding suburbs with quality AC solutions.</p>
+
 <div class="space-y-6">
 <div class="flex items-center gap-4">
-<i class="fa-solid fa-phone text-brand-accent text-2xl"></i>
-<div><p class="text-sm text-gray-400">Call Us</p><a href="tel:+61290000000" class="text-xl font-bold hover:text-brand-accent transition">+61 2 9000 0000</a></div>
+<div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+<i class="fas fa-phone-alt"></i>
+</div>
+<div>
+<p class="text-sm text-slate-400 uppercase">Call Us</p>
+<p class="text-xl font-bold">+61 2 9000 0000</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<i class="fa-solid fa-envelope text-brand-accent text-2xl"></i>
-<div><p class="text-sm text-gray-400">Email Us</p><a href="mailto:info@aircoolspecialists.com.au" class="text-xl font-bold hover:text-brand-accent">info@aircoolspecialists.com.au</a></div>
+<div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<p class="text-sm text-slate-400 uppercase">Email Us</p>
+<p class="text-xl font-bold">info@aircoolspecialists.com.au</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<i class="fa-solid fa-location-dot text-brand-accent text-2xl"></i>
-<div><p class="text-sm text-gray-400">Location</p><p class="text-xl font-bold">Parramatta, NSW 2150, Australia</p></div>
+<div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div>
+<p class="text-sm text-slate-400 uppercase">Location</p>
+<p class="text-xl font-bold">Parramatta, NSW 2150, Australia</p>
 </div>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-8 text-gray-800 shadow-2xl">
-<form onsubmit="event.preventDefault(); alert('Inquiry sent! We will contact you shortly.');">
-<input type="text" placeholder="Full Name" class="w-full mb-4 px-4 py-3 rounded-lg border bg-gray-50 focus:outline-none focus:border-brand-accent" required>
-<input type="tel" placeholder="Phone Number" class="w-full mb-4 px-4 py-3 rounded-lg border bg-gray-50 focus:outline-none focus:border-brand-accent" required>
-<select class="w-full mb-4 px-4 py-3 rounded-lg border bg-gray-50 focus:outline-none focus:border-brand-accent">
+</div>
+
+<div class="bg-white rounded-3xl p-8 text-slate-900 shadow-2xl">
+<form class="space-y-4">
+<input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-blue-600">
+<input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-blue-600">
+<select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-blue-600">
 <option>Residential Installation</option>
 <option>Commercial Maintenance</option>
 <option>Emergency Repair</option>
 </select>
-<textarea rows="4" placeholder="Your Project Details" class="w-full mb-6 px-4 py-3 rounded-lg border bg-gray-50 focus:outline-none focus:border-brand-accent"></textarea>
-<button type="submit" class="w-full bg-brand-blue hover:bg-brand-dark text-white font-bold py-4 rounded-lg transition">Send Request</button>
+<textarea placeholder="Your Project Details" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-blue-600"></textarea>
+<button class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition">Send Request</button>
 </form>
-</div>
 </div>
 </div>
 </section>
 
-<footer class="bg-gray-900 text-gray-500 py-10 text-center">
-<p>&copy; 2026 AirCool Specialists Australia. All rights reserved.</p>
+<footer class="bg-slate-950 py-8 text-center text-slate-500 text-sm border-t border-slate-800">
+<p>© 2026 AirCool Specialists Australia. All rights reserved.</p>
 </footer>
 
-<script>
-function toggleReadMore(btn) {
-const content = btn.parentElement.querySelector('.read-more-content');
-content.classList.toggle('expanded');
-btn.textContent = content.classList.contains('expanded') ? 'Read Less' : 'Read More';
-}
-</script>
 </body>
 </html>
 
